@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contributing &#8212; pytorch-optimizer  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Examples of pytorch-optimizer usage" href="examples.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="running-tests">
+<h2>Running Tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h2>
+<p>Thanks for your interest in contributing to <code class="docutils literal notranslate"><span class="pre">pytorch-optimizer</span></code>, there are multiple
+ways and places you can contribute.</p>
+<p>Fist of all just clone repository:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.com:jettify/pytorch-optimizer.git
+</pre></div>
+</div>
+<p>Create virtualenv with python3.6 (older version are not supported). For example
+using <em>virtualenvwrapper</em> commands could look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd pytorch-optimizer
+$ mkvirtualenv --python=`which python3.7` pytorch-optimizer
+</pre></div>
+</div>
+<p>After that please install libraries required for development:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install -r requirements-dev.txt
+$ pip install -e .
+</pre></div>
+</div>
+<p>Congratulations, you are ready to run the test suite:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ make cov
+</pre></div>
+</div>
+<p>To run individual use following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ py.test -sv tests/test_basic.py -k test_name
+</pre></div>
+</div>
+</div>
+<div class="section" id="reporting-an-issue">
+<h2>Reporting an Issue<a class="headerlink" href="#reporting-an-issue" title="Permalink to this headline">¶</a></h2>
+<p>If you have found issue with <cite>pytorch-optimizer</cite> please do
+not hesitate to file an issue on the <a class="reference external" href="https://github.com/jettify/pytorch-optimizer">GitHub</a> project. When filing your
+issue please make sure you can express the issue with a reproducible test
+case.</p>
+<p>When reporting an issue we also need as much information about your environment
+that you can include. We never know what information will be pertinent when
+trying narrow down the issue. Please include at least the following
+information:</p>
+<ul class="simple">
+<li><p>Version of <cite>pytorch-optimizer</cite>, <cite>python</cite>.</p></li>
+<li><p>Version <a class="reference external" href="https://github.com/pytorch/pytorch">PyTorch</a> if installed.</p></li>
+<li><p>Version or CUDA if installed.</p></li>
+<li><p>Platform you’re running on (OS X, Linux).</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pytorch-optimizer</a></h1>
+
+
+
+<p class="blurb">collection of optimizers for PyTorch</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=jettify&repo=pytorch-optimizer&type=star&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">Available Optimizers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples of pytorch-optimizer usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#running-tests">Running Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reporting-an-issue">Reporting an Issue</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="examples.html" title="previous chapter">Examples of pytorch-optimizer usage</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Nikolai Novik.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/contributing.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/jettify/pytorch-optimizer" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
